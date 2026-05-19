@@ -11,6 +11,7 @@ targets:
   SwiftUIStepperDemo:
     type: application
     platform: macOS
+    productName: SwiftUIStepperDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUIStepperDemo:
+    build:
+      targets:
+        SwiftUIStepperDemo: all
+    run:
+      config: Debug
